@@ -1,0 +1,109 @@
+
+<div class="wrapper">
+        
+        <nav id="sidebar">
+            <div class="sidebar-header">
+              <h4 >
+                <a href="index.html"><img src="assets/img/logo1.png" class="img-responsive" height="40"  alt=""></a>
+              </h4>
+            </div>
+
+            <ul class="list-unstyled components">
+                
+                <li class="active">
+                    <a href="#homeSubmenu" data-parent="#accordion" data-toggle="collapse" aria-expanded="false">Home Loans</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li><a [routerLink]="['home-loan-types']">Home Loan Types</a></li>
+                        <li><a [routerLink]="['home-elg-cri']">Home Loan Eligibility Critera</a></li>
+                        <li><a [routerLink]="['home-loan-banks']">Home Loan Banks</a></li>
+                        <li><a [routerLink]="['compare-home-loans']">Compare Home Loans</a></li>
+                    </ul>
+                </li>
+                <li>
+                   
+                    <a href="#pageSubmenu" data-parent="#accordion" data-toggle="collapse" aria-expanded="false">Personal Loans</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li><a [routerLink]="['personal-loan']">Personal Loan Eligibility Critera</a></li>
+                        <li><a href="#">Compare Personal Loans</a></li>
+                        <li><a href="#">Personal Loan Partners</a></li>
+                        <li><a href="#">Personal Loan Tips</a></li>
+                    </ul>
+                </li>
+                <li>
+                   
+                  <a href="#pageSubmenu1" data-parent="#accordion" data-toggle="collapse" aria-expanded="false">Business Loans</a>
+                  <ul class="collapse list-unstyled" id="pageSubmenu1">
+                      <li><a href="#">Business Loan Eligibility Critera</a></li>
+                      <li><a href="#">Compare Business Loans</a></li>
+                      
+                  </ul>
+                </li>
+                <li>
+                   
+                  <a href="#pageSubmenu2" data-parent="#accordion" data-toggle="collapse" aria-expanded="false">LAP</a>
+                  <ul class="collapse list-unstyled" id="pageSubmenu2">
+                      <li><a href="#">Loan Against Property Eligibility Critera</a></li>
+                      <li><a href="#">Compare Interest Rates</a></li>
+                      <li><a href="#">Loan Against Property Tips</a></li>
+                  </ul>
+                </li>
+                <li>
+                   
+                  <a href="#pageSubmenu3" data-parent="#accordion" data-toggle="collapse" aria-expanded="false">Balance Transfer</a>
+                  <ul class="collapse list-unstyled" id="pageSubmenu3">
+                      <li><a href="#">Balance Transfer Documentation</a></li>
+                      <li><a href="#">Eligibility For Balance Transfer</a></li>
+                     
+                  </ul>
+                </li>
+            </ul>
+
+           
+        </nav>
+
+      
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+
+            <nav class="navbar navbar-inverse">
+                   <div class="navbar-header">
+                        <button type="button" id="sidebarCollapse" class="navbar-btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a [routerLink]="['about-us']">About Us</a></li>
+                            <li><a [routerLink]="['apply-to-loan']">Apply To Loan</a></li>
+                            <li><a [routerLink]="['contact-us']">Contact Us</a></li>
+                        </ul>
+                    </div>
+               
+            </nav>
+        </div>
+        </div>
+            <div class="row" >
+               <div class="col-md-12">
+                    <router-outlet></router-outlet>    
+                </div>
+             </div>
+       
+            </div>
+       
+        
+    </div>            
+    
+    
+<footer class="footer">
+    <div class="container">
+        <div class="row" >
+                <div class="col-md-12">
+    <span >© COPYRIGHT INVINCIBLE FINANCE LOANS | Theme: by Reforma IT Solutions</span>
+    </div></div>
+    </div>
+</footer>    
